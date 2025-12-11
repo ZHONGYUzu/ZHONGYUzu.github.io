@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Site</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0d1117; /* GitHub Dark Mode color */
-            color: #c9d1d9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #58a6ff;
-        }
-        p {
-            font-size: 1.5rem;
-        }
-        .container {
-            border: 1px solid #30363d;
-            padding: 40px;
-            border-radius: 10px;
-            background-color: #161b22;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Development Record</title>
+    
+    <!-- This single line connects your HTML to your new Style file -->
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+
     <div class="container">
-        <h1>Hello, World!</h1>
-        <p>I built this website using GitHub Pages.</p>
+        
+        <!-- HEADER -->
+        <header>
+            <img src="https://github.com/github.png" class="profile-pic" alt="Profile">
+            <h1>YOUR NAME</h1>
+            <p class="subtitle">Personal Development Record & Portfolio</p>
+            <a href="https://www.linkedin.com/" class="btn btn-primary">LinkedIn</a>
+            <a href="mailto:your@email.com" class="btn">Email Me</a>
+        </header>
+
+        <!-- INTRO -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Welcome to my digital development record. I created this page to document my journey.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>Current Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Communication</span>
+                <span class="skill-tag">Project Management</span>
+                <span class="skill-tag">HTML & CSS</span>
+            </div>
+        </section>
+
+        <!-- DEVELOPMENT RECORD -->
+        <section>
+            <h2>Development Log</h2>
+
+            <!-- Add new entries here simply by copying this block -->
+            <div class="record-item">
+                <div class="record-date">December 2025</div>
+                <span class="record-title">Refactored Code</span>
+                <p>Separated HTML and CSS into different files to make the project scalable.</p>
+            </div>
+
+            <div class="record-item">
+                <div class="record-date">December 2025</div>
+                <span class="record-title">Built Website</span>
+                <p>Launched version 1.0 of my portfolio.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 | Hosted on GitHub Pages</p>
+        </footer>
+
     </div>
+
 </body>
 </html>
