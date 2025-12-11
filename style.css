@@ -1,1 +1,125 @@
+/* style.css */
 
+/* --- 1. SETTINGS & COLORS --- */
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --text-main: #c9d1d9;
+    --text-white: #ffffff;
+    --accent: #238636;
+    --accent-hover: #2ea043;
+    --border: #30363d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- 2. LAYOUT --- */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* --- 3. HERO SECTION --- */
+header {
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background-color: var(--card-bg); 
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+h1 { color: var(--text-white); margin: 0; font-size: 2.5rem; }
+.subtitle { color: #8b949e; font-size: 1.2rem; margin-top: 10px; }
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--card-bg);
+    color: var(--accent);
+    border: 1px solid var(--border);
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+.btn-primary {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+}
+.btn:hover { transform: translateY(-2px); opacity: 0.9; }
+
+/* --- 4. SECTIONS --- */
+h2 {
+    color: var(--text-white);
+    border-left: 5px solid var(--accent);
+    padding-left: 15px;
+    margin-top: 60px;
+}
+
+/* --- 5. THE RECORD (Timeline) --- */
+.record-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.record-date {
+    font-size: 0.85rem;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.record-title {
+    color: var(--text-white);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* --- 6. SKILLS GRID --- */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skill-tag {
+    background-color: rgba(56, 139, 253, 0.15);
+    color: #58a6ff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(56, 139, 253, 0.4);
+}
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+    color: #8b949e;
+    font-size: 0.9rem;
+}
